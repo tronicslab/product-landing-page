@@ -1,29 +1,45 @@
 body {
 	background-color: lightgray;
+	margin: 0px;
+	padding: 0px;
 }
 
 #header {
-	background-color: lightblue;
+	background-color: #222;
 }
 
-#nav-bar ul li, #nav-bar a {
-	display: inline-block;
-	height: 40px;
+#nav-bar {
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: 1fr 20% 20% 20%;
+}
+
+.nav-button {
+	height: 50px;
+}
+
+#about-button {
+	grid-column: 2 / 3;
+} 
+
+#pricing-button{
+	grid-column: 3 / 4;
+} 
+
+#resources-button {
+	grid-column: 4 / 5;
 }
 
 #nav-bar a {
 	background-color: magenta;
+	display: block;
+	height: 100%;
 }
 
 main {
 	background-color: beige;
 	width: 85%;
 	margin: auto;
-}
-
-main section {
-	//width: 85%;
-	//margin: auto;
 }
 
 #about {
@@ -34,13 +50,20 @@ main section {
 	background-color: black;
 	color: black;
 	font-weight: bold;
-	font-size: 30px;
 	display: grid;
 	grid-template-columns: 30% 1fr 30% 1fr 30%;
 }
 
+#pricing h2 {
+	font-size: 18px;
+	grid-column: 1 / 6;
+	margin: 10px auto;
+	color: white;
+}
+
 #tier1, #tier2, #tier3 {
 	text-align: center;
+	font-size: 30px;
 }
 
 #tier1 {
