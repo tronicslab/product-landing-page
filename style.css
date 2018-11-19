@@ -1,9 +1,29 @@
+body {
+	background-color: lightgray;
+}
+
 #header {
 	background-color: lightblue;
 }
 
+#nav-bar ul li, #nav-bar a {
+	display: inline-block;
+	height: 40px;
+}
+
+#nav-bar a {
+	background-color: magenta;
+}
+
 main {
-	background-color: lightgray;
+	background-color: beige;
+	width: 85%;
+	margin: auto;
+}
+
+main section {
+	//width: 85%;
+	//margin: auto;
 }
 
 #about {
@@ -11,7 +31,31 @@ main {
 }
 
 #pricing {
-	background-color: yellow;
+	background-color: black;
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
+	display: grid;
+	grid-template-columns: 30% 1fr 30% 1fr 30%;
+}
+
+#tier1, #tier2, #tier3 {
+	text-align: center;
+}
+
+#tier1 {
+	grid-column: 1 / 2;
+	background-color: orange;
+}
+
+#tier2 {
+	grid-column: 3 / 4;
+	background-color: pink;
+}
+
+#tier3 {
+	grid-column: 5 / 6;
+	background-color: gold;
 }
 
 #resources {
