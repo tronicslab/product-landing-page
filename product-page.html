@@ -10,6 +10,10 @@
 		
 		<link rel="stylesheet" href="style.css?v=1.0">
 
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Lato:700|Roboto');
+		</style>
+
 	</head>
 	
 	<body>
@@ -39,6 +43,9 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed ornare tellus. Nunc eu placerat mauris, et mollis nunc. Sed sodales dignissim mauris id dapibus. Nunc eget pharetra ex. Donec in tristique sapien. Fusce maximus justo eu felis convallis dignissim. Praesent posuere feugiat lorem. Nam ultricies viverra risus dignissim sagittis.
 				</p>
+				<div id="video-wrap">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/A6mKd5_-abk" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 				<p>
 					Vivamus facilisis at nibh id porttitor. Sed tempus nulla vel blandit pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc blandit velit in iaculis lobortis. Curabitur iaculis felis accumsan varius luctus. Duis suscipit mi eu lobortis dictum. Nam fermentum odio et dolor sodales commodo. Mauris in sapien at lorem tempor feugiat. Sed ornare est a posuere dignissim. Aenean cursus dui sed nisl ultrices dignissim. Fusce ullamcorper enim massa, nec vulputate nibh laoreet nec. Nam et gravida quam, at porta arcu.
 				</p>
@@ -51,7 +58,7 @@
 				<h2>Choose one of our pricing options that best fits your needs: </h2>
 				
 				<div id="tier1">
-          <p>Advanced<br>Package</p>
+          <h2>Advanced<br>Package</h2>
 					<img class="barepcb" src="images/pcbs.jpg" alt="Bare PCBs">
           <h5>Includes</h5>
           <ul class="includes-list">
@@ -60,13 +67,15 @@
             <li>BOM <span>*No parts provided</span></li>
             <li>LCD module with ribbon cable</li>
           </ul>
-          <p>
-						$120 + tax
-					</p>
+          <div class="pricetag">
+	          <p>
+							$120
+						</p>
+					</div>
 				</div>
 
 				<div id="tier2">
-          <p>Hobbyist<br>Package</p>
+          <h2>Hobbyist<br>Package</h2>
 					<img class="barepcb" src="images/pcbs.jpg" alt="Bare PCBs">
           <h5>Includes</h5>
           <ul class="includes-list">
@@ -74,13 +83,15 @@
             <li>All components to build board yourself</li>
             <li>LCD module with ribbon cable</li>
           </ul>
-          <p>
-						$300 + tax
-					</p>
+          <div class="pricetag">
+	          <p>
+							$300
+						</p>
+					</div>
 				</div>
 				
 				<div id="tier3">
-          <p>Assembled<br>Package</p>
+          <h2>Assembled<br>Package</h2>
 					<img class="barepcb" src="images/pcbs.jpg" alt="Bare PCBs">
           <h5>Includes</h5>
           <ul class="includes-list">
@@ -88,14 +99,24 @@
             <li>Tested with latest F/W</li>
             <li>LCD Included with ribbon cable</li>
           </ul>
-          <p>
-						$720 + tax
-					</p>
+          <div class="pricetag">
+	          <p>
+							$720
+						</p>
+					</div>
 				</div>
 
 			</section>
 
 			<section id="order">
+				<div id="wrap">
+          <h3>Enter your email address to receive exclusive product updates and offers</h3>
+          <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <label for="email" id="email-label">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="Enter email">
+            <input id="submit" type="submit">
+          </form>
+        </div>
 				<p>
 					Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi pellentesque venenatis sapien non dapibus. Cras vulputate dolor a quam accumsan, et sodales lacus maximus. Suspendisse et augue et dui varius congue. Integer luctus condimentum sapien, ac vulputate ante rutrum et. Integer feugiat felis sit amet tellus malesuada, ut luctus massa varius. Ut feugiat enim vitae libero blandit, vel porta leo cursus. Donec laoreet sem at porttitor laoreet. Morbi sagittis cursus tincidunt. Integer venenatis ex vitae imperdiet laoreet.
 				</p>
@@ -107,7 +128,8 @@
 		</main>
 		
 		<footer id="footer">
-			<div></div>
+			<div id="transparent"></div>
+			<p>Copyright 2018 - The Battery Whisperer Co.</p>
 		</footer>
 
 	</body>

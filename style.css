@@ -3,8 +3,13 @@
   padding: 0;
 }
 
+h1, h2, h3, h5 {
+	font-family: 'Lato', sans-serif;
+}
+
 p {
   margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -91,6 +96,62 @@ section p {
   padding: 10px 40px;
 }
 
+#video-wrap {
+	position: relative;
+	padding-bottom: 37%;
+	padding-top: 25px;
+	height: 0;
+  width: 80%;
+  margin: 15px auto;
+}
+
+#video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 40px 0;
+}
+
+#submit {
+  width: 75px;
+  background-color: #acf;
+  border: none;
+  color: #555;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  height: 32px;
+}
+
+input {
+  background-color: #FFF;
+  padding: 0.6em;
+  width: auto;
+  margin-right: 10px;
+}
+
+#email:focus {
+  outline: 2px solid gold;
+}
+
+#email-label {
+  display: none;
+  width: 0;
+}
+
+#submit:hover {
+  background-color: #9be;
+  color: black;
+}
+
 #about {
 	//background-color: brown;
 }
@@ -98,15 +159,15 @@ section p {
 #pricing {
 	background-color: whitesmoke;
 	color: black;
-	font-weight: bold;
 	display: grid;
   grid-gap: 15px;
 	grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 15px;
+  grid-template-rows: auto 500px;
+  padding: 0 15px 15px 15px;
 }
 
 #pricing h2 {
-	font-size: 19px;
+	font-size: 21px;
 	grid-column: 1 / 4;
 	margin: 10px auto;
 	color: black;
@@ -120,6 +181,7 @@ section p {
 	text-align: center;
 	font-size: 25px;
   background-color: white;
+  position: relative;
 }
 
 #tier1 {
@@ -175,8 +237,30 @@ section p {
   max-width: 100%;
 }
 
+.pricetag {
+  position: absolute;
+  bottom: 0;
+  width: 100%
+}
+
+.pricetag p {
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+}
+
 #order {
 	background-color: white;
+}
+
+#wrap {
+  margin-top: 40px;
+  background-color: whitesmoke;
+  padding: 40px 0px 5px 0px;
+}
+
+#wrap h3 {
+  text-align: center;
 }
 
 #footer {
@@ -185,9 +269,28 @@ section p {
   background-position: center;
   background-repeat: no-repeat;
   height: 225px;
+  position: relative;
 }
 
-#footer div {
+#transparent {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), black);
   height: 100%;
+}
+
+#footer p {
+	display: block;
+	position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 14px;
+  text-align: right;
+  width: 100%;
+  right: 40px;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  #pricing {
+  	grid-template-rows: auto 465px;
+  }
 }
